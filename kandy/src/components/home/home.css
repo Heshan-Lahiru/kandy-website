@@ -1,0 +1,563 @@
+
+.hlp-home {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hlp-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hlp-cover-image {
+  background-image: url('#');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hlp-content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.hlp-content-wrapper h1{
+  color: black;
+}
+.hlp-content-wrapper p{
+  color: black;
+}
+.hlp-content-wrapper ul{
+  color: black;
+}
+
+.hlp-text-content {
+  flex: 1;
+  color: #ffffff;
+  padding-right: 2rem;
+}
+
+.hlp-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hlp-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
+}
+
+.hlp-features {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s;
+}
+
+.hlp-features li {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.hlp-features i {
+  margin-right: 0.5rem;
+  color: #ffd700;
+}
+
+.hlp-title.hlp-visible,
+.hlp-subtitle.hlp-visible,
+.hlp-features.hlp-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hlp-moving-cards-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.hlp-moving-cards-container::before,
+.hlp-moving-cards-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hlp-moving-cards-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,9.8), rgba(255,255,255,0));
+}
+
+.hlp-moving-cards-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,9.8), rgba(255,255,255,0));
+}
+
+.hlp-moving-cards {
+  display: flex;
+  animation: moveCards 20s linear infinite;
+}
+
+.hlp-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.hlp-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+@keyframes moveCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+/* Rest of the CSS remains the same */
+
+@media (max-width: 768px) {
+  .hlp-content-wrapper {
+    flex-direction: column;
+  }
+
+  .hlp-text-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hlp-title {
+    font-size: 2rem;
+  }
+
+  .hlp-subtitle {
+    font-size: 1rem;
+  }
+
+  .hlp-moving-cards-container {
+    height: 200px;
+  }
+
+  .hlp-card {
+    width: 150px;
+    height: 200px;
+  }
+
+  /* Rest of the media query remains the same */
+}
+
+.hlp-section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+
+}
+
+.hlp-about-us {
+  position: relative; /* Necessary for overlay positioning */
+  padding: 4rem 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideBackground 16s infinite;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.hlp-about-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideBackground 16s infinite;
+  opacity: 0.5; /* Adjust the opacity to your preference (between 0 and 1) */
+  z-index: -1; /* Make sure it stays behind the content */
+}
+
+@keyframes slideBackground {
+  0% {
+    background-image: url('https://cdn.wegic.ai/assets/onepage/ai/image/e22448b0-5b81-44db-8aa4-d677175e91db.jpeg'); /* Image 1 */
+  }
+  25% {
+    background-image: url('https://cdn.wegic.ai/assets/onepage/ai/image/5f559490-55d4-41be-90b4-eb7b0ae2fa52.jpeg'); /* Image 2 */
+  }
+  50% {
+    background-image: url('https://cdn.wegic.ai/assets/onepage/ai/image/64da88c9-ba7c-4398-8247-12d1ab521a7f.jpeg'); /* Image 3 */
+  }
+  75% {
+    background-image: url('https://cdn.wegic.ai/assets/onepage/ai/image/2df58b0a-b20b-4c5d-ac8d-b66419dae5e4.jpeg'); /* Image 4 */
+  }
+  100% {
+    background-image: url('https://cdn.wegic.ai/assets/onepage/ai/image/5f559490-55d4-41be-90b4-eb7b0ae2fa52.jpeg'); /* Loop back to Image 2 */
+  }
+}
+
+.hlp-about-text {
+  font-size: 1.1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent white background */
+  padding: 1rem; /* Optional padding for spacing */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+
+.hlp-our-services {
+  padding: 4rem 2rem;
+}
+
+.hlp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hlp-service-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hlp-service-item:hover {
+  transform: translateY(-5px);
+}
+
+.hlp-service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hlp-service-title {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hlp-title {
+    font-size: 2rem;
+  }
+
+  .hlp-section-title {
+    font-size: 2rem;
+    text-align: center; /* Centers the text */
+  }
+  
+
+  .hlp-about-text {
+    font-size: 1rem;
+  }
+
+  .hlp-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* KandyInsights.css KandyInsights.css KandyInsights.css KandyInsights.css */
+
+/* KandyInsights.css */
+.kandy-insights-container {
+  
+  line-height: 1.5;
+  padding: 1.5rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kandy-insights-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center; 
+  display: block;
+  width: 100%; 
+}
+
+
+.kandy-insights-description {
+  text-align: center; 
+  margin-bottom: 1.5rem;
+}
+
+.kandy-insights-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .kandy-insights-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.kandy-insights-box {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.kandy-insights-box-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.kandy-insights-box-value {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.kandy-insights-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.kandy-insights-box-time {
+  background-color: #dbeafe;
+}
+
+.kandy-insights-box-time .kandy-insights-icon {
+  color: #2563eb;
+}
+
+.kandy-insights-box-weather {
+  background-color: #fef3c7;
+}
+
+.kandy-insights-box-weather .kandy-insights-icon {
+  color: #d97706;
+}
+
+.kandy-insights-box-population {
+  background-color: #d1fae5;
+}
+
+.kandy-insights-box-population .kandy-insights-icon {
+  color: #059669;
+}
+
+.kandy-insights-box-attractions {
+  background-color: #ede9fe;
+}
+
+.kandy-insights-box-attractions .kandy-insights-icon {
+  color: #7c3aed;
+}
+/*-----------------------------------------------------*/
+
+.kandy-cultural-significance {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #000000;
+  border-bottom: 2px solid #d2b48c;
+  padding-bottom: 10px;
+}
+
+.description {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.landmarks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.landmark {
+  background-color: #ffd5f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.landmark:hover {
+  transform: translateY(-5px);
+}
+
+.landmark i {
+  font-size: 24px;
+  color: #ffbb00;
+  margin-bottom: 10px;
+}
+
+.landmark h2 {
+  
+  color: #000000;
+  margin: 10px 0;
+}
+
+.landmark p {
+  color: #000000;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .landmarks {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .landmark {
+    flex-basis: calc(33.333% - 20px);
+  }
+}
+
+
+/*--------------------------------------------ctn */
+
+.kandyCTN {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kandyContent {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kandyImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.kandyImg img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kandyTitle {
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.kandyDesc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.kandyFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kandyFeat {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kandyFeat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kandyFeat i {
+  font-size: 2rem;
+  color: #ff9812;
+  margin-bottom: 10px;
+}
+
+.kandyFeat h2 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.kandyFeat p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .kandyCTN {
+    flex-direction: column-reverse;
+  }
+
+  .kandyImg {
+    height: 300px;
+  }
+
+  .kandyContent {
+    padding: 30px;
+  }
+
+  .kandyTitle {
+    font-size: 2rem;
+  }
+
+  .kandyDesc {
+    font-size: 1rem;
+  }
+
+  .kandyFeat h2 {
+    font-size: 1.2rem;
+  }
+}
