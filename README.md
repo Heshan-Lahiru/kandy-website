@@ -15,8 +15,8 @@ Welcome to **Kandy Safari** – Explore the natural beauty and wildlife of Kandy
 
 ## 📸 Sneak Peek
 
-![Wildlife](https://example.com/safari-image.jpg)
-![Scenic View](https://example.com/scenic-view.jpg)
+![Wildlife]([https://example.com/safari-image.jpg](https://cdn.pixabay.com/photo/2022/10/05/07/37/river-7500094_640.jpg))
+![Scenic View]([https://example.com/scenic-view.jpg](https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500))
 
 ---
 
