@@ -2,7 +2,8 @@
 
 Welcome to **Kandy Safari** – Explore the natural beauty and wildlife of Kandy like never before!
 
-![Kandy Safari Banner](https://example.com/banner.png)
+![Screenshot (148)](https://github.com/user-attachments/assets/a525d3ae-8bfc-449f-99f2-601620f0a189)
+
 
 ---
 
