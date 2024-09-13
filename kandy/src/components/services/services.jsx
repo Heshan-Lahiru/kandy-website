@@ -22,9 +22,9 @@ const ServicesPage = () => {
     { id: 15, name: 'Blockchain Development', description: 'Secure, decentralized solutions', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWxLGzQwL7dWfFRTJ7HumHXkKiH_Q9O60biw&s' },
     { id: 16, name: 'IoT Solutions', description: 'Connect your devices', image: 'https://www.destguides.com/dynamic-files/itinerary/2424/background-image.jpg' },
     { id: 17, name: 'AR/VR Development', description: 'Immersive experiences', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzPf1XegwcUvuSCJaKDhsRYIgDz9onRjqjA&s' },
-    { id: 18, name: 'Customer Support', description: '24/7 support for your clients', image: '/api/placeholder/300/200' },
-    { id: 19, name: 'Project Management', description: 'Efficient project delivery', image: '/api/placeholder/300/200' },
-    { id: 20, name: 'IT Consulting', description: 'Expert tech advice', image: '/api/placeholder/300/200' },
+    { id: 18, name: 'Customer Support', description: '24/7 support for your clients', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsG7Gk59HxgSGzQQveWV1sLxarP2BwgCuUVg&s' },
+    { id: 19, name: 'Project Management', description: 'Efficient project delivery', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDJdwk2PcIY9k_1sMf3B2KpVqFKVxnFAg7Q&s' },
+    { id: 20, name: 'IT Consulting', description: 'Expert tech advice', image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/d7/c5/a7.jpg' },
   ];
 
   return (
