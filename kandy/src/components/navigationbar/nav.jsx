@@ -16,8 +16,8 @@ const Nav = () => {
         <div className={`unique-nav-links ${isOpen ? 'unique-nav-active' : ''}`}>
           <a href="#home" className="unique-nav-item">Home</a>
           <a href="/About" className="unique-nav-item">About</a>
-          <a href="#services" className="unique-nav-item">Services</a>
-          <a href="#contact" className="unique-nav-item">Contact</a>
+          <a href="/services" className="unique-nav-item">Services</a>
+          <a href="/contact" className="unique-nav-item">Contact</a>
           <a href="/SignUpForm" className="knd-nav-item">
             <i className="fas fa-user-plus"></i> Signup
           </a>
