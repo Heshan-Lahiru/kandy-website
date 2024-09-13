@@ -1,0 +1,90 @@
+.contact-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+   padding-top: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .cover-image {
+    background-image: url('https://i0.wp.com/www.bonjoursunset.com/wp-content/uploads/2019/07/IMG_1106-1.jpg?fit=1000%2C667&ssl=1');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .contact-content {
+    display: flex;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: -50px;
+  }
+  .contact-form {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  .contact-info {
+    flex: 1;
+    padding-left: 2rem;
+    border-left: 1px solid #ddd;
+  }
+  .contact-info h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #4CAF50;
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+    }
+    .contact-form, .contact-info {
+      padding: 1rem 0;
+    }
+    .contact-info {
+      border-left: none;
+      border-top: 1px solid #ddd;
+      margin-top: 1rem;
+    }
+  }
