@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <nav className="unique-nav">
       <div className="unique-nav-container">
-        <div className="unique-nav-logo">Touarist</div>
+        <div className="unique-nav-logo">Kandy Tours</div>
         <div className={`unique-nav-links ${isOpen ? 'unique-nav-active' : ''}`}>
           <a href="#home" className="unique-nav-item">Home</a>
           <a href="#about" className="unique-nav-item">About</a>
@@ -21,7 +21,7 @@ const Nav = () => {
           <a href="/SignUpForm" className="knd-nav-item">
             <i className="fas fa-user-plus"></i> Signup
           </a>
-          <a href="#" className="knd-nav-item">
+          <a href="/SignUpForm" className="knd-nav-item">
             <i className="fas fa-sign-in-alt"></i> Login
           </a>
         </div>
