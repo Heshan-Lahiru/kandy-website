@@ -1,0 +1,125 @@
+.about-us-container {
+    background: linear-gradient(135deg, #f3e7ff 0%, #e5eeff 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+    color: #000000;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .info-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 48%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-card h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+
+  .info-card p {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .gallery-section {
+    margin-bottom: 3rem;
+  }
+
+  .gallery-section h2 {
+    font-size: 2rem;
+    color: #4a0e78;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .image-container:hover {
+    transform: scale(1.05);
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .image-overlay svg {
+    color: white;
+  }
+
+  .footer {
+    text-align: center;
+    color: #6c3483;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+    }
+
+    .info-card {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
