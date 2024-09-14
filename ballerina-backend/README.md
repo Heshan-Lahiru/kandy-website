@@ -30,6 +30,7 @@ Navigate to your project folder:
 Copycd my-ballerina-backend
 
 
+<p align="left">
 Project Structure
 Copymy-ballerina-backend/
 ├── Ballerina.toml        # Project configuration file
@@ -40,6 +41,9 @@ Copymy-ballerina-backend/
 │   └── utils/
 │       └── helper.bal          # Utility functions and helpers
 └── resources/            # Static resources (optional)
+
+</p>
+
 Running the Project
 To run the Ballerina project, use the following command in the project root:
 Copybal run
