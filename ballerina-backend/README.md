@@ -1,6 +1,10 @@
-Ballerina Backend Project 🚀
-🛠️ Ballerina 2201.3.1 | 📜 MIT License | 🏗️ In Development
-This project demonstrates how to create a simple backend service using Ballerina.
+<h1 align="center">Ballerina Backend Project 🚀</h1>
+<p align="center">
+  <strong>🛠️ Ballerina 2201.3.1 | 📜 MIT License | 🏗️ In Development</strong>
+</p>
+<p align="center">
+  This project demonstrates how to create a simple backend service using Ballerina.
+</p>
 Table of Contents
 
 Prerequisites
