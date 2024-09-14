@@ -2,7 +2,8 @@
 
 Welcome to **Kandy Safari** – Explore the natural beauty and wildlife of Kandy like never before!
 
-![Kandy Safari Banner](https://example.com/banner.png)
+![Screenshot (148)](https://github.com/user-attachments/assets/a525d3ae-8bfc-449f-99f2-601620f0a189)
+
 
 ---
 
@@ -13,9 +14,10 @@ Welcome to **Kandy Safari** – Explore the natural beauty and wildlife of Kandy
 - 🌏 Interactive map of key locations
 
 ## 📸 Sneak Peek
+![istockphoto-535499464-612x612](https://github.com/user-attachments/assets/b2138756-b513-4846-a2b3-03efb648ed67)
+![pexels-photo-788200](https://github.com/user-attachments/assets/520e8aee-e82d-4bfd-8649-0a241165435b)
 
-![Wildlife](https://example.com/safari-image.jpg)
-![Scenic View](https://example.com/scenic-view.jpg)
+
 
 ---
 
@@ -32,7 +34,7 @@ Ensure you have these installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/kandy-safari.git
+    git clone https://github.com/Heshan-Lahiru/kandy-website.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -73,4 +75,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 🙌 Contributors
-- [Heshan-Lahiru](https://github.com/your-username)
+- [Heshan-Lahiru](https://github.com/Heshan-Lahiru)
