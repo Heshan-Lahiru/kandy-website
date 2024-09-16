@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
           <div className="info-item">
             <span className="icon">📍</span>
-            <span>158/1, Gampaha, Sri Lanka</span>
+            <span>158/1,Pethiyagoda, Gampaha, Sri Lanka</span>
           </div>
         </div>
       </div>
