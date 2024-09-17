@@ -1,17 +1,41 @@
-import ballerina/http;
+import ballerinax/mongodb;
+import ballerina/io;
 
-service /api on new http:Listener(8080) {
+public function main() returns error? {
+    // MongoDB connection configuration
+    mongodb:ConnectionConfig mongoConfig = {
+        connection: {
+            host: "cluster0.mongodb.net",
+            port: 27017,
+            auth: {
+                username: "lahiruheshan454",
+                password: "pEAFpZLt9VZO86BT"
+            },
+            options: {
+                sslEnabled: true,
+                retryWrites: true
+            }
+        },
+        databaseName: "ballerina"  // Replace with your actual database name if needed
+    };
 
-    // GET method for '/api/data'
-    resource function get data(http:Caller caller, http:Request req) returns error? {
-        json response = { "message": "Hello from Ballerina!" };
-        check caller->respond(response);
+    // Create MongoDB client
+    mongodb:Client mongoClient = check new (mongoConfig);
+
+    // Get the database names
+    var dbNames = mongoClient->getDatabasesNames();
+    match dbNames {
+        string[] names => io:println("Databases: ", names);
+        error e => io:println("Failed to get databases: " + e.message);
     }
 
-    // POST method for '/api/submit'
-    resource function post submit(http:Caller caller, http:Request req) returns error? {
-        json payload = check req.getJsonPayload();
-        json response = { "status": "Received", "data": payload };
-        check caller->respond(response);
+    // Get collection names in the specified database
+    var collections = mongoClient->getCollectionNames("ballerina");
+    match collections {
+        string[] names => io:println("Collections: ", names);
+        error e => io:println("Failed to get collections: " + e.message);
     }
+
+    // Close the MongoDB client
+    mongoClient->close();
 }
