@@ -6,7 +6,6 @@ npm install react-router-dom react-bootstrap bootstrap@5.1.3 date-fns
 For React Router DOM:
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-
 For React Bootstrap:
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar } from 'react-bootstrap';
