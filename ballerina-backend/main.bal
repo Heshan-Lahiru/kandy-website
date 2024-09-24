@@ -13,7 +13,8 @@ public function main() returns error? {
             },
             options: {
                 sslEnabled: true,
-                retryWrites: true
+                retryWrites: true,
+                // Additional options can be added here if needed
             }
         },
         databaseName: "ballerina"  // Replace with your actual database name if needed
@@ -23,7 +24,7 @@ public function main() returns error? {
     mongodb:Client mongoClient = check new (mongoConfig);
 
     // Get the database names
-    var dbNames = mongoClient->getDatabasesNames();
+    var dbNames = mongoClient->getDatabaseNames();
     match dbNames {
         string[] names => io:println("Databases: ", names);
         error e => io:println("Failed to get databases: " + e.message);
